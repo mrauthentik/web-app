@@ -1,0 +1,313 @@
+/* Table of Content
+1. General styling
+2. Home page or Landing page styling
+3. Login Styling
+4. Registeration Page Styling
+5. Media queries
+
+############### General Styling  ############### */
+:root{
+    --blue:rgb(1, 1, 61);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+body{
+    background-color:var(--blue);
+}
+h3{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color:white;
+    font-family: "Poppins";
+    text-align: center;
+    display: block;
+    margin-top: 12rem;
+    font-size: 30px;
+    font-weight: lighter;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: lighter;
+}
+a{
+    color: rgb(5, 230, 5);
+    text-decoration: none;
+}
+form{
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+}
+img{
+    border-radius: 10rem;
+    width: 10%;
+    position: relative;
+    left: 37rem;
+}
+input[type='email'],[type="text"],[type="password"]{
+  background-color: rgba(128, 128, 128, 0.13);
+  border: none;
+  width: 80%;
+  height: 2rem;
+  margin-bottom:10px ;
+}
+label{
+    color: rgb(1, 1, 61);
+    font-size: 13px;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+button{
+    background-color: rgb(1, 1, 61);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    width: 80%;
+    height: 1.8rem;
+    border-radius: 4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+p{
+    position: relative;
+    left: 9rem;
+    color: rgb(1, 1, 61);
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+/* ############ Home page/ Landing Page Styling ############ */
+
+
+.home-btn{
+   position: relative;
+   left: 30rem;
+    width: 30%;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: white;
+}
+.home-btn a{
+     color:rgb(1, 1, 61);
+     margin-left: 3rem;
+     font-size: 20px;
+     font-family: "Poppins";
+     font-weight: bolder;
+     text-decoration: none;
+}
+.home-p{
+    color: white;
+    position: relative;
+    left: 35rem;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.home-p a{
+    color: rgb(10, 219, 10);
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+}
+.home-img{
+    border-radius: 0;
+}
+.round{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.circle1{
+    background-color: orangered;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 3rem;
+    margin-right: 10px;
+}
+.circle2{
+    background-color: white;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 3rem;
+    margin-right: 10px;
+}
+.circle3{
+    background-color: rgb(5, 230, 5);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 3rem;
+    margin-right: 10px;
+}
+
+/* ########## Login Page Styling ############### */
+
+.login-container,.register-container{
+    background-color: white;
+    width: 40%;
+    overflow: hidden;
+    height: 100vh;
+    margin: auto;
+    border-top-left-radius: 4rem;
+    border-top-right-radius:4rem;
+}
+span a{
+    color:  rgb(10, 219, 10);
+    text-decoration: none;
+    position: relative;
+    left: 6rem;
+    font-weight: bolder;
+    font-family: "Poppins";
+}
+hr{
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/* ######### Registration Page ############ */
+
+.reg{
+    color: rgb(5, 230, 5);
+    text-decoration: none;
+    position: relative;
+    left: 37rem;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.register-container{
+    position: relative;
+    top: 2rem;
+}
+.ref{
+    background-color: rgba(128, 128, 128, 0.13);
+    width: 80%;
+    height: 2rem;
+    color: rgb(1, 1, 61);
+    font-weight: bolder;
+    font-family: "poppins";
+}
+.ref p{
+    position: relative;
+    top: 7px;
+
+}
+
+/* ############# Media Queries ############ */
+@media (max-width: 851px) {
+    body{
+        overflow: hidden;
+    }
+    .round{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    .circle1{
+        background-color: orangered;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 3rem;
+        margin-right: 10px;
+    }
+    .circle2{
+        background-color: white;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 3rem;
+        margin-right: 10px;
+    }
+    .circle3{
+        background-color: rgb(5, 230, 5);
+        height: 1rem;
+        width: 1rem;
+        border-radius: 3rem;
+        margin-right: 10px;
+    }
+    
+    /* ########## Login Page Styling ############### */
+    
+    .login-container,.register-container{
+        background-color: white;
+        height: 100vh;
+        margin: auto;
+        border-top-left-radius: 4rem;
+        border-top-right-radius:4rem;
+    }
+    span a{
+        color:  rgb(10, 219, 10);
+        text-decoration: none;
+        position: relative;
+        left: 6rem;
+        font-weight: bolder;
+        font-family: "Poppins";
+    }
+    hr{
+        margin-top: 2rem;
+        width: 80%;
+    }
+    
+    /* ######### Registration Page ############ */
+    
+    .reg{
+        color: rgb(5, 230, 5);
+        text-decoration: none;
+        position: relative;
+        left: 37%;
+    }
+    .register-container{
+        position: relative;
+        top: 5rem;
+    }
+    .ref{
+        background-color: rgba(128, 128, 128, 0.13);
+        width: 80%;
+        height: 2rem;
+        color: rgb(1, 1, 61);
+        font-weight: bolder;
+        font-family: "poppins";
+    }
+    .ref p{
+        position: relative;
+        top: 7px;
+    
+    }
+    p{
+        display: block;
+        left: 1rem;
+    }
+
+    .home-btn {
+        width: 40%;
+        left: 13rem; 
+    }
+    .home-btn a{
+        font-size: 15px;
+        font-weight: 700;
+        padding-bottom: 5px;
+        text-align: left;
+        padding-right: 1rem;
+    }
+   .home-p{
+    position: relative;
+    left: 1rem;
+    
+   }
+   .login-container,.register-container{
+    background-color: white;
+    height: 100vh;
+    margin: auto;
+    width: 80%;
+    border-top-left-radius: 4rem;
+    border-top-right-radius:4rem;
+}
+} 
