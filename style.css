@@ -317,9 +317,8 @@ hr{
         border-top-right-radius:4rem;
     }
     img{
-        width: 10%;
-        position: relative;
-        left: 15rem;
+        display: none;
+        content: "";
     }
     span a{
         color:  rgb(10, 219, 10);
